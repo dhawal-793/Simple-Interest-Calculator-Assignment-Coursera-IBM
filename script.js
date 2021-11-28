@@ -26,15 +26,16 @@ function compute() {
     alert(
       "Alert !!! \n" + "Please enter a positive number as the principal amount."
     );
+    document.getElementById("principal").focus();
   } else {
     result.innerHTML =
-      "If you deposit " +
+      "If you deposit <mark>" +
       p +
-      ",\nat an interest rate of " +
+      "</mark>,\nat an interest rate of <mark>" +
       r +
-      "%.\nYou will recieve an amount of " +
+      "%</mark>.\nYou will recieve an amount of <mark>" +
       i +
-      ",\nin the year " +
-      y2;
+      "</mark>,\nin the year <mark>" +
+      y2+"</mark>";
   }
 }
